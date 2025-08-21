@@ -1,1 +1,7 @@
+{
+  "name": "retail-dataform",
+  "dependencies": {
+    "@dataform/core": ">=2.0.0"
+  }
+}
 
