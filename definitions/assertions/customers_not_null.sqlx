@@ -1,1 +1,6 @@
+config { type: "assertion" }
+
+select *
+from ${ref("customers_cleaned")}
+where customer_id is null or email is null;
 
