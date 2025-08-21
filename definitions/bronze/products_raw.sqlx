@@ -1,1 +1,12 @@
+config {
+  type: "table",
+  schema: "bronze"
+}
+
+select
+  product_id,
+  product_name,
+  category,
+  price
+from `${defaultDatabase}.raw.products`;
 
