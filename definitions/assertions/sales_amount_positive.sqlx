@@ -1,1 +1,6 @@
 
+config { type: "assertion" }
+
+select *
+from ${ref("orders_enriched")}
+where amount <= 0;
