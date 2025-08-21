@@ -1,1 +1,18 @@
+config {
+  type: "incremental",
+  schema: "silver",
+  uniqueKey: "order_id"
+}
+
+select
+  order_id,
+  customer_id,
+  product_id,
+  amount,
+  order_date
+from ${ref("orders_raw")}
+
+{% if is_incremental() %}
+where order_date > (select max(order_date) from ${self()})
+{% endif %}
 
