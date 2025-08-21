@@ -1,6 +1,5 @@
 {
   "warehouse": "bigquery",
-  "defaultSchema": "analytics_dev",
-  "assertionSchema": "assertions_dev",
+  "defaultSchema": "dataform",
   "defaultDatabase": "knr-porj1"
 }
