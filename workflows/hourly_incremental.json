@@ -1,1 +1,8 @@
+{
+  "name": "hourly_incremental",
+  "schedule": "0 * * * *",
+  "actions": [
+    "sales_incremental"
+  ]
+}
 
