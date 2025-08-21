@@ -1,6 +1,8 @@
 config {
-  type: "table",
-  schema: "bronze"
+    type: "table",
+    schema: "bronze"
 }
 
-select 1 as id, "hello world" as msg;
+SELECT
+  1 AS id,
+  "hello world" AS msg1
