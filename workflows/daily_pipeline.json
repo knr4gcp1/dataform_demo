@@ -1,1 +1,14 @@
-
+{
+  "name": "daily_pipeline",
+  "schedule": "0 2 * * *",
+  "actions": [
+    "customers_raw",
+    "orders_raw",
+    "products_raw",
+    "customers_cleaned",
+    "orders_enriched",
+    "sales_summary",
+    "customer_lifetime_value",
+    "top_products"
+  ]
+}
