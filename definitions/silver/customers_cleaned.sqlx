@@ -1,1 +1,12 @@
 
+config {
+  type: "table",
+  schema: "silver"
+}
+
+select
+  customer_id,
+  trim(lower(email)) as email,
+  concat(first_name, " ", last_name) as full_name,
+  created_at
+from ${ref("customers_raw")};
