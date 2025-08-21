@@ -1,1 +1,7 @@
+config { type: "assertion" }
+
+select o.*
+from ${ref("orders_enriched")} o
+left join ${ref("customers_cleaned")} c on o.customer_id = c.customer_id
+where c.customer_id is null;
 
