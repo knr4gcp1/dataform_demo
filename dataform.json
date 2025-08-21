@@ -1,5 +1,4 @@
 {
   "warehouse": "bigquery",
-  "defaultSchema": "dataform",
-  "defaultDatabase": "knr-porj1"
+  "defaultSchema": "bronze"
 }
